@@ -227,7 +227,10 @@ export default function App() {
                                 >
                                   Spring Sale
                                 </p>
-                                <h1 class="c-heading h-align">
+                                <h1
+                                  class="c-heading h-align"
+                                  style={{ padding: "0px 0px 4px" }}
+                                >
                                   Free sleeve + up to $460 off
                                 </h1>{" "}
                                 <div class="c-paragraph p-align">
@@ -307,7 +310,10 @@ export default function App() {
                                 >
                                   Spring Sale
                                 </p>
-                                <h2 class="c-heading h-align">
+                                <h2
+                                  class="c-heading h-align"
+                                  style={{ padding: "0px 0px 4px" }}
+                                >
                                   Save up to $800 on select Surface Laptop 3
                                 </h2>{" "}
                                 <div class="c-paragraph p-align">
