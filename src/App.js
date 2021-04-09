@@ -369,7 +369,6 @@ export default function App() {
                   ></button>
 
                   <div itemscope="" itemtype="https://schema.org/ItemList">
-                    {/* navigationCarousel */}
                     <NavigationCarousel />
                   </div>
                 </div>
