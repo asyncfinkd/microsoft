@@ -10,6 +10,22 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: "Helvetica Medium";
+  src: url("./resources/font/HelveticaNeueLTGEO-Medium.a2425724.woff2")
+    format("woff2");
+}
+@font-face {
+  font-family: "Helvetica Regular";
+  src: url("./resources/font/HelveticaNeueLTGEO-Regular.3c542304.woff2")
+    format("woff2");
+}
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url("./resources/font/HelveticaNeueLTGEO-Bold.719611bc.woff2")
+    format("woff2");
+}
+
 article,
 aside,
 details,

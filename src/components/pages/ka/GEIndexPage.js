@@ -1,14 +1,14 @@
 import React from "react";
-import CovidInfo from "../CovidInfo/CovidInfo";
-import Footer from "../footer/Footer";
-import ForBusiness from "../ForBusiness/ForBusiness";
-import GamePass from "../GamePass/GamePass";
-import Navbar from "../navbar/Navbar";
-import NavigationCarousel from "../NavigationCarousel/NavigationCarousel";
-import Posts from "../Posts/Posts";
-import SecondCarousel from "../secondCarousel/SecondCarousel";
+import Navbar from "../../navbar/Navbar";
+import NavigationCarousel from "../../NavigationCarousel/NavigationCarousel";
+import GamePass from "../../GamePass/GamePass";
+import Posts from "../../Posts/Posts";
+import ForBusiness from "../../ForBusiness/ForBusiness";
+import CovidInfo from "../../CovidInfo/CovidInfo";
+import SecondCarousel from "../../secondCarousel/SecondCarousel";
+import Footer from "../../footer/Footer";
 
-export default function App() {
+export default function GEIndexPage() {
   return (
     <>
       <div
@@ -106,9 +106,10 @@ export default function App() {
                 style={{ background: "#0F760F" }}
                 data-sitebanner-bannertype="Regular"
               >
-                <span>
-                  Spring Sale—Save. Play. Score deals on games, devices, and
-                  more. Offers end 4/15. Shop now
+                <span style={{ fontFamily: "Helvetica Regular" }}>
+                  საგაზაფხულო გაყიდვა - დაზოგე. ითამაშეთ . გაიტანეთ გარიგებები
+                  თამაშებზე, მოწყობილობებზე და ა.შ. შეთავაზებები მთავრდება 4/15.
+                  იშოპინგე
                 </span>
               </a>
             </div>
@@ -230,23 +231,32 @@ export default function App() {
                               <div>
                                 <p
                                   class="c-paragraph-1 f-responsive bn-align"
-                                  style={{ color: "#054b16" }}
+                                  style={{
+                                    color: "#054b16",
+                                    fontFamily: "Helvetica Bold",
+                                  }}
                                 >
-                                  Spring Sale
+                                  საზაფხულო გაყიდვა
                                 </p>
                                 <h1
                                   class="c-heading h-align"
-                                  style={{ padding: "0px 0px 4px" }}
+                                  style={{
+                                    padding: "0px 0px 4px",
+                                    fontFamily: "Helvetica Bold",
+                                  }}
                                 >
-                                  Free sleeve + up to $460 off
+                                  უფასო ყდა + 460 დოლარამდე ფასდაკლებით
                                 </h1>{" "}
-                                <div class="c-paragraph p-align">
+                                <div
+                                  class="c-paragraph p-align"
+                                  style={{
+                                    fontFamily: "Helvetica Medium",
+                                  }}
+                                >
                                   <p>
-                                    Bundle a Signature Type Cover with Surface
-                                    Pro 7 and save, plus get a free select
-                                    sleeve. Book an online appointment with a
-                                    Microsoft Store associate to get expert
-                                    advice while you shop.
+                                    შეასწორეთ ხელმოწერის ტიპის საფარი Surface
+                                    Pro 7-ით და შეინახეთ, ასევე მიიღეთ უფასო
+                                    ყდის არჩევა.
                                   </p>
                                 </div>
                                 <div class="c-group">
@@ -255,16 +265,22 @@ export default function App() {
                                     aria-label="Shop Surface Pro 7 and Type Cover"
                                     data-m='{"cN":"Shop now","cT":"0","id":"n2c6m1r2a2","sN":2,"aN":"c6m1r2a2","assetid":"SSAGPTSS_131837_75884_160_a","tags":{"ms.linkid":"SSAGPTSS_131837_75884_160_a"}}'
                                     href="https://www.microsoft.com/en-us/p/surface-pro-7-type-cover-bundle/8t2k2lvn9qhj?icid=mscom_marcom_H1a_Spring21_SurfacePro7bundlecontrol"
+                                    style={{
+                                      fontFamily: "Helvetica Medium",
+                                    }}
                                   >
-                                    <span>Shop now</span>
+                                    <span>ყიდვა</span>
                                   </a>
                                   <a
                                     class="c-call-to-action c-glyph p-ctaalign"
                                     aria-label="Get help choosing the right device for you with a personal shopping appointment with a Microsoft Store associate."
                                     data-m='{"cN":"Book an appointment","cT":"0","id":"n3c6m1r2a2","sN":3,"aN":"c6m1r2a2","assetid":"SSAGPTSS_131837_75884_160_b","tags":{"ms.linkid":"SSAGPTSS_131837_75884_160_b"}}'
                                     href="https://www.microsoft.com/en-us/store/b/online-computer-shopping-appointments?atc=true&amp;icid=mscom_marcom_H1b_Spring21_personalshoppercontrol"
+                                    style={{
+                                      fontFamily: "Helvetica Medium",
+                                    }}
                                   >
-                                    <span>Book an appointment</span>
+                                    <span>დანიშნეთ შეხვედრა</span>
                                   </a>
                                 </div>
                               </div>
@@ -313,21 +329,28 @@ export default function App() {
                               <div>
                                 <p
                                   class="c-paragraph-1 f-responsive bn-align"
-                                  style={{ color: "#054b16" }}
+                                  style={{
+                                    color: "#054b16",
+                                    fontFamily: "Helvetica Bold",
+                                  }}
                                 >
-                                  Spring Sale
+                                  საზაფხულო გაყიდვა
                                 </p>
                                 <h2
                                   class="c-heading h-align"
-                                  style={{ padding: "0px 0px 4px" }}
+                                  style={{
+                                    padding: "0px 0px 4px",
+                                    fontFamily: "Helvetica Bold",
+                                  }}
                                 >
-                                  Save up to $800 on select Surface Laptop 3
+                                  დაზოგე 800 დოლარი შერჩეულ Surface Laptop 3 –
+                                  ზე
                                 </h2>{" "}
                                 <div class="c-paragraph p-align">
-                                  <p>
-                                    Save $400 now when you buy a new Surface
-                                    Laptop 3 and get up to $400 back when you
-                                    trade in an eligible device
+                                  <p style={{ fontFamily: "Helvetica Medium" }}>
+                                    დაზოგე 400 დოლარი ახლა, როდესაც იყიდი ახალ
+                                    Surface Laptop 3-ს და მიიღე 400 დოლარი უკან,
+                                    როდესაც შესაბამის ვაჭრობას შეძლებ
                                   </p>
                                 </div>
                                 <div>
@@ -336,8 +359,9 @@ export default function App() {
                                     aria-label="Shop Surface Laptop 3"
                                     data-m='{"cN":"Shop now","cT":"0","id":"n2c7m1r2a2","sN":2,"aN":"c7m1r2a2","assetid":"SSAGPTSS_131878_75434_160_a","tags":{"ms.linkid":"SSAGPTSS_131878_75434_160_a"}}'
                                     href="https://www.microsoft.com/en-us/p/surface-laptop-3/8vfggh1r94tm?icid=mscom_marcom_H2a_Spring21_SurfaceLaptop3offercontrol"
+                                    style={{ fontFamily: "Helvetica Medium" }}
                                   >
-                                    <span>Shop now</span>
+                                    <span>ყიდვა</span>
                                   </a>
                                 </div>
                               </div>
@@ -380,7 +404,7 @@ export default function App() {
               </div>
             </div>
           </div>
-          <Posts language="en" />
+          <Posts language="GE" />
           <GamePass />
           <ForBusiness />
           <CovidInfo />
