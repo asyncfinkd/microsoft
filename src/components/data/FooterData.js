@@ -73,4 +73,47 @@ export const FooterDataMicrosoftStore = [
       "https://www.microsoft.com/en-us/store/workshops-training-and-events?icid=vl_uf_932020",
     text: "Virtual workshops and training",
   },
+  {
+    label: "Microsoft Store Promise Microsoft Store",
+    router:
+      "https://www.microsoft.com/en-us/store/b/why-microsoft-store?icid=footer_why-msft-store_7102020",
+    text: "Microsoft Store Promise",
+  },
+  {
+    label: "Financing Microsoft Store",
+    router:
+      "https://www.microsoft.com/en-us/store/b/financing?icid=footer_financing_10142020",
+    text: "Financing",
+  },
+];
+
+export const FooterEducationData = [
+  {
+    label: "Microsoft in education Education",
+    router: "https://www.microsoft.com/en-us/education",
+    text: "Microsoft in education",
+  },
+  {
+    label: "Office for students Education",
+    router:
+      "https://www.microsoft.com/en-us/education/products/office/default.aspx",
+    text: "Office for students",
+  },
+  {
+    label: "Office 365 for schools Education",
+    router:
+      "https://products.office.com/en-us/academic/compare-office-365-education-plans",
+    text: "Office 365 for schools",
+  },
+  {
+    label: "Deals for students & parents Education",
+    router:
+      "https://www.microsoft.com/en-us/store/b/education?icid=CNavfooter_Studentsandeducation",
+    text: "Deals for students & parents",
+  },
+  {
+    label: "Microsoft Azure in education Education",
+    router: "https://azure.microsoft.com/en-us/community/education/",
+    text: "Microsoft Azure in education",
+  },
 ];

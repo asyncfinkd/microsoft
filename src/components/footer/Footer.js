@@ -2,6 +2,7 @@ import React from "react";
 import {
   FooterDataWhatsNew,
   FooterDataMicrosoftStore,
+  FooterEducationData,
 } from "../data/FooterData";
 
 export default function Footer() {
@@ -55,27 +56,6 @@ export default function Footer() {
                           </a>
                         </li>
                       ))}
-
-                      <li>
-                        <a
-                          aria-label="Microsoft Store Promise Microsoft Store"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/store/b/why-microsoft-store?icid=footer_why-msft-store_7102020"
-                          data-m='{"cN":"Footer_StoreandSupport_MicrosoftPromise_nav","id":"n7c2c1c1m1r1a3","sN":7,"aN":"c2c1c1m1r1a3"}'
-                        >
-                          Microsoft Store Promise
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Financing Microsoft Store"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/store/b/financing?icid=footer_financing_10142020"
-                          data-m='{"cN":"Footer_StoreandSupport_Financing_nav","id":"n8c2c1c1m1r1a3","sN":8,"aN":"c2c1c1m1r1a3"}'
-                        >
-                          Financing
-                        </a>
-                      </li>
                     </ul>
                   </div>
                   <div
@@ -86,56 +66,17 @@ export default function Footer() {
                       Education
                     </div>
                     <ul class="c-list f-bare">
-                      <li>
-                        <a
-                          aria-label="Microsoft in education Education"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/education"
-                          data-m='{"cN":"Footer_Education_MicrosoftInEducation_nav","id":"n1c3c1c1m1r1a3","sN":1,"aN":"c3c1c1m1r1a3"}'
-                        >
-                          Microsoft in education
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Office for students Education"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/education/products/office/default.aspx"
-                          data-m='{"cN":"Footer_Education_OfficeForStudents_nav","id":"n2c3c1c1m1r1a3","sN":2,"aN":"c3c1c1m1r1a3"}'
-                        >
-                          Office for students
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Office 365 for schools Education"
-                          class="c-uhff-link"
-                          href="https://products.office.com/en-us/academic/compare-office-365-education-plans"
-                          data-m='{"cN":"Footer_Education_Office365ForSchools_nav","id":"n3c3c1c1m1r1a3","sN":3,"aN":"c3c1c1m1r1a3"}'
-                        >
-                          Office 365 for schools
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Deals for students &amp; parents Education"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/store/b/education?icid=CNavfooter_Studentsandeducation"
-                          data-m='{"cN":"Footer_Education_DealsForStudentsandParents_nav","id":"n4c3c1c1m1r1a3","sN":4,"aN":"c3c1c1m1r1a3"}'
-                        >
-                          Deals for students &amp; parents
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Microsoft Azure in education Education"
-                          class="c-uhff-link"
-                          href="https://azure.microsoft.com/en-us/community/education/"
-                          data-m='{"cN":"Footer_MicrosoftAzureInEducation_nav","id":"n5c3c1c1m1r1a3","sN":5,"aN":"c3c1c1m1r1a3"}'
-                        >
-                          Microsoft Azure in education
-                        </a>
-                      </li>
+                      {FooterEducationData.map((item) => (
+                        <li>
+                          <a
+                            className="c-uhff-link"
+                            aria-label={item.label}
+                            href={item.router}
+                          >
+                            {item.text}
+                          </a>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
