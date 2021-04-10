@@ -3,6 +3,7 @@ import {
   FooterDataWhatsNew,
   FooterDataMicrosoftStore,
   FooterEducationData,
+  FooterEnterpriseDataStructure,
 } from "../data/FooterData";
 
 export default function Footer() {
@@ -89,86 +90,17 @@ export default function Footer() {
                       Enterprise
                     </div>
                     <ul class="c-list f-bare">
-                      <li>
-                        <a
-                          aria-label="Azure Enterprise"
-                          class="c-uhff-link"
-                          href="https://azure.microsoft.com/"
-                          data-m='{"cN":"Footer_Enterprise_MicrosoftAzure_nav","id":"n1c4c1c1m1r1a3","sN":1,"aN":"c4c1c1m1r1a3"}'
-                        >
-                          Azure
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="AppSource  Enterprise"
-                          class="c-uhff-link"
-                          href="https://go.microsoft.com/fwlink/?LinkID=808093"
-                          data-m='{"cN":"Footer_Enterprise_MicrosoftAppSource_nav","id":"n2c4c1c1m1r1a3","sN":2,"aN":"c4c1c1m1r1a3"}'
-                        >
-                          AppSource{" "}
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Automotive Enterprise"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/enterprise/automotive"
-                          data-m='{"cN":"Footer_Enterprise_Automotive_nav","id":"n3c4c1c1m1r1a3","sN":3,"aN":"c4c1c1m1r1a3"}'
-                        >
-                          Automotive
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Government Enterprise"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/enterprise/government"
-                          data-m='{"cN":"Footer_Enterprise_Government_nav","id":"n4c4c1c1m1r1a3","sN":4,"aN":"c4c1c1m1r1a3"}'
-                        >
-                          Government
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Healthcare Enterprise"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/enterprise/health"
-                          data-m='{"cN":"Footer_Enterprise_Health_nav","id":"n5c4c1c1m1r1a3","sN":5,"aN":"c4c1c1m1r1a3"}'
-                        >
-                          Healthcare
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Manufacturing Enterprise"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/enterprise/manufacturing"
-                          data-m='{"cN":"Footer_Enterprise_Manufacturing_nav","id":"n6c4c1c1m1r1a3","sN":6,"aN":"c4c1c1m1r1a3"}'
-                        >
-                          Manufacturing
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Financial services Enterprise"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/enterprise/financial-services/banking-and-capital-markets"
-                          data-m='{"cN":"Footer_Enterprise_FinanciaServices_nav","id":"n7c4c1c1m1r1a3","sN":7,"aN":"c4c1c1m1r1a3"}'
-                        >
-                          Financial services
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Retail Enterprise"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/enterprise/retail-consumer-goods"
-                          data-m='{"cN":"Footer_Enterprise_Retail_nav","id":"n8c4c1c1m1r1a3","sN":8,"aN":"c4c1c1m1r1a3"}'
-                        >
-                          Retail
-                        </a>
-                      </li>
+                      {FooterEnterpriseDataStructure.map((item) => (
+                        <li>
+                          <a
+                            aria-label={item.label}
+                            class="c-uhff-link"
+                            href={item.router}
+                          >
+                            {item.text}
+                          </a>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                   <div

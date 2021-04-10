@@ -117,3 +117,47 @@ export const FooterEducationData = [
     text: "Microsoft Azure in education",
   },
 ];
+
+export const FooterEnterpriseDataStructure = [
+  {
+    label: "Azure Enterprise",
+    router: "https://azure.microsoft.com/",
+    text: "Azure",
+  },
+  {
+    label: "AppSource  Enterprise",
+    router: "https://go.microsoft.com/fwlink/?LinkID=808093",
+    text: "AppSource",
+  },
+  {
+    label: "Automotive Enterprise",
+    router: "https://www.microsoft.com/en-us/enterprise/automotive",
+    text: "Automotive",
+  },
+  {
+    label: "Government Enterprise",
+    router: "https://www.microsoft.com/en-us/enterprise/government",
+    text: "Government",
+  },
+  {
+    label: "Healthcare Enterprise",
+    router: "https://www.microsoft.com/en-us/enterprise/health",
+    text: "Healthcare",
+  },
+  {
+    label: "Manufacturing Enterprise",
+    router: "https://www.microsoft.com/en-us/enterprise/manufacturing",
+    text: "Manufacturing",
+  },
+  {
+    label: "Financial services Enterprise",
+    router:
+      "https://www.microsoft.com/en-us/enterprise/financial-services/banking-and-capital-markets",
+    text: "Financial services",
+  },
+  {
+    label: "Retail Enterprise",
+    router: "https://www.microsoft.com/en-us/enterprise/retail-consumer-goods",
+    text: "Retail",
+  },
+];
