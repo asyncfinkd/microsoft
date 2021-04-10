@@ -161,3 +161,128 @@ export const FooterEnterpriseDataStructure = [
     text: "Retail",
   },
 ];
+
+export const FooterDeveloperDataStructure = [
+  {
+    label: "Microsoft Visual Studio Developer",
+    router: "https://visualstudio.microsoft.com/",
+    text: "Microsoft Visual Studio",
+  },
+  {
+    label: "Windows Dev Center Developer",
+    router: "https://developer.microsoft.com/en-us/windows",
+    text: "Windows Dev Center",
+  },
+  {
+    label: "Developer Center Developer",
+    router: "https://developer.microsoft.com/",
+    text: "Developer Center",
+  },
+  {
+    label: "Microsoft developer program Developer",
+    router: "https://developer.microsoft.com/en-us/store/register",
+    text: "Microsoft developer program",
+  },
+  {
+    label: "Channel 9 Developer",
+    router: "https://channel9.msdn.com/",
+    text: "Channel 9",
+  },
+  {
+    label: "Office Dev Center Developer",
+    router: "https://developer.microsoft.com/en-us/office",
+    text: "Office Dev Center",
+  },
+  {
+    label: "Microsoft Garage Developer",
+    router: "https://www.microsoft.com/en-us/garage/",
+    text: "Microsoft Garage",
+  },
+];
+
+export const FooterCompanyDataStructure = [
+  {
+    label: "Careers Company",
+    router: "https://careers.microsoft.com/",
+    text: "Careers",
+  },
+  {
+    label: "About Microsoft Company",
+    router: "https://www.microsoft.com/en-us/about",
+    text: "About Microsoft",
+  },
+  {
+    label: "Company news Company",
+    router: "https://news.microsoft.com/",
+    text: "Company news",
+  },
+  {
+    label: "Privacy at Microsoft Company",
+    router: "https://privacy.microsoft.com/en-us",
+    text: "Privacy at Microsoft",
+  },
+  {
+    label: "Investors Company",
+    router: "https://www.microsoft.com/investor/default.aspx",
+    text: "Investors",
+  },
+  {
+    label: "Diversity and inclusion Company",
+    router: "https://www.microsoft.com/en-us/diversity/",
+    text: "Diversity and inclusion",
+  },
+  {
+    label: "Accessibility Company",
+    router: "https://www.microsoft.com/en-us/accessibility",
+    text: "Accessibility",
+  },
+  {
+    label: "Security Company",
+    router: "https://www.microsoft.com/en-us/security/default.aspx",
+    text: "Security",
+  },
+];
+
+export const FooterLinksDataStructure = [
+  {
+    id: "c-uhff-footer_sitemap",
+    router: "https://www.microsoft.com/en-us/sitemap1.aspx",
+    text: "Sitemap",
+  },
+  {
+    id: "c-uhff-footer_contactus",
+    router: "https://support.microsoft.com/contactus",
+    text: "Contact Microsoft",
+  },
+  {
+    id: "c-uhff-footer_privacyandcookies",
+    router: "https://go.microsoft.com/fwlink/?LinkId=521839",
+    text: "Privacy",
+  },
+  {
+    id: "c-uhff-footer_managecookies",
+    class: "x-hidden",
+    text: "Manage cookies",
+    router: "#",
+  },
+  {
+    id: "c-uhff-footer_termsofuse",
+    text: "Terms of use",
+    router: "https://go.microsoft.com/fwlink/?LinkID=206977",
+  },
+  {
+    id: "c-uhff-footer_trademarks",
+    text: "Trademarks",
+    router: "https://www.microsoft.com/trademarks",
+  },
+  {
+    id: "c-uhff-footer_safetyandeco",
+    router: "https://www.microsoft.com/en-us/devices/safety-and-eco",
+    text: "Safety & eco",
+  },
+  {
+    id: "c-uhff-footer_aboutourads",
+    router: "https://choice.microsoft.com",
+    text: "About our ads",
+  },
+];

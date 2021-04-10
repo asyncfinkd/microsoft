@@ -4,6 +4,9 @@ import {
   FooterDataMicrosoftStore,
   FooterEducationData,
   FooterEnterpriseDataStructure,
+  FooterDeveloperDataStructure,
+  FooterCompanyDataStructure,
+  FooterLinksDataStructure,
 } from "../data/FooterData";
 
 export default function Footer() {
@@ -111,75 +114,17 @@ export default function Footer() {
                       Developer
                     </div>
                     <ul class="c-list f-bare">
-                      <li>
-                        <a
-                          aria-label="Microsoft Visual Studio Developer"
-                          class="c-uhff-link"
-                          href="https://visualstudio.microsoft.com/"
-                          data-m='{"cN":"Footer_Developer_MicrosoftVisualStudio_nav","id":"n1c5c1c1m1r1a3","sN":1,"aN":"c5c1c1m1r1a3"}'
-                        >
-                          Microsoft Visual Studio
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Windows Dev Center Developer"
-                          class="c-uhff-link"
-                          href="https://developer.microsoft.com/en-us/windows"
-                        >
-                          Windows Dev Center
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Developer Center Developer"
-                          class="c-uhff-link"
-                          href="https://developer.microsoft.com/"
-                          data-m='{"cN":"Footer_Developer_DeveloperCenter_nav","id":"n3c5c1c1m1r1a3","sN":3,"aN":"c5c1c1m1r1a3"}'
-                        >
-                          Developer Center
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Microsoft developer program Developer"
-                          class="c-uhff-link"
-                          href="https://developer.microsoft.com/en-us/store/register"
-                          data-m='{"cN":"Footer_Developer_MicrosoftDeveloperProgram_nav","id":"n4c5c1c1m1r1a3","sN":4,"aN":"c5c1c1m1r1a3"}'
-                        >
-                          Microsoft developer program
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Channel 9 Developer"
-                          class="c-uhff-link"
-                          href="https://channel9.msdn.com/"
-                          data-m='{"cN":"Footer_Developer_Channel9_nav","id":"n5c5c1c1m1r1a3","sN":5,"aN":"c5c1c1m1r1a3"}'
-                        >
-                          Channel 9
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Office Dev Center Developer"
-                          class="c-uhff-link"
-                          href="https://developer.microsoft.com/en-us/office"
-                          data-m='{"cN":"Footer_Developer_OfficeDevCenter_nav","id":"n6c5c1c1m1r1a3","sN":6,"aN":"c5c1c1m1r1a3"}'
-                        >
-                          Office Dev Center
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Microsoft Garage Developer"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/garage/"
-                          data-m='{"cN":"Microsoft Garage_nav","id":"n7c5c1c1m1r1a3","sN":7,"aN":"c5c1c1m1r1a3"}'
-                        >
-                          Microsoft Garage
-                        </a>
-                      </li>
+                      {FooterDeveloperDataStructure.map((item) => (
+                        <li>
+                          <a
+                            aria-label={item.label}
+                            class="c-uhff-link"
+                            href={item.router}
+                          >
+                            {item.text}
+                          </a>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                   <div
@@ -190,86 +135,17 @@ export default function Footer() {
                       Company
                     </div>
                     <ul class="c-list f-bare">
-                      <li>
-                        <a
-                          aria-label="Careers Company"
-                          class="c-uhff-link"
-                          href="https://careers.microsoft.com/"
-                          data-m='{"cN":"Footer_Company_Careers_nav","id":"n1c6c1c1m1r1a3","sN":1,"aN":"c6c1c1m1r1a3"}'
-                        >
-                          Careers
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="About Microsoft Company"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/about"
-                          data-m='{"cN":"Footer_Company_AboutMicrosoft_nav","id":"n2c6c1c1m1r1a3","sN":2,"aN":"c6c1c1m1r1a3"}'
-                        >
-                          About Microsoft
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Company news Company"
-                          class="c-uhff-link"
-                          href="https://news.microsoft.com/"
-                          data-m='{"cN":"Footer_Company_CompanyNews_nav","id":"n3c6c1c1m1r1a3","sN":3,"aN":"c6c1c1m1r1a3"}'
-                        >
-                          Company news
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Privacy at Microsoft Company"
-                          class="c-uhff-link"
-                          href="https://privacy.microsoft.com/en-us"
-                          data-m='{"cN":"Footer_Company_PrivacyAtMicrosoft_nav","id":"n4c6c1c1m1r1a3","sN":4,"aN":"c6c1c1m1r1a3"}'
-                        >
-                          Privacy at Microsoft
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Investors Company"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/investor/default.aspx"
-                          data-m='{"cN":"Footer_Company_Investors_nav","id":"n5c6c1c1m1r1a3","sN":5,"aN":"c6c1c1m1r1a3"}'
-                        >
-                          Investors
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Diversity and inclusion Company"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/diversity/"
-                          data-m='{"cN":"Footer_Company_DiversityAndInclusion_nav","id":"n6c6c1c1m1r1a3","sN":6,"aN":"c6c1c1m1r1a3"}'
-                        >
-                          Diversity and inclusion
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Accessibility Company"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/accessibility"
-                          data-m='{"cN":"Footer_Company_Accessibility_nav","id":"n7c6c1c1m1r1a3","sN":7,"aN":"c6c1c1m1r1a3"}'
-                        >
-                          Accessibility
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          aria-label="Security Company"
-                          class="c-uhff-link"
-                          href="https://www.microsoft.com/en-us/security/default.aspx"
-                          data-m='{"cN":"Footer_Company_Security_nav","id":"n8c6c1c1m1r1a3","sN":8,"aN":"c6c1c1m1r1a3"}'
-                        >
-                          Security
-                        </a>
-                      </li>
+                      {FooterCompanyDataStructure.map((item) => (
+                        <li>
+                          <a
+                            aria-label={item.label}
+                            class="c-uhff-link"
+                            href={item.router}
+                          >
+                            {item.text}
+                          </a>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -290,88 +166,14 @@ export default function Footer() {
                     class="c-list f-bare"
                     data-m='{"cN":"Corp links_cont","cT":"Container","id":"c8c1c1m1r1a3","sN":8,"aN":"c1c1m1r1a3"}'
                   >
-                    <li id="c-uhff-footer_sitemap">
-                      <a
-                        class="c-uhff-link"
-                        href="https://www.microsoft.com/en-us/sitemap1.aspx"
-                        data-mscc-ic="false"
-                        data-m='{"cN":"Footer_Sitemap_nav","id":"n1c8c1c1m1r1a3","sN":1,"aN":"c8c1c1m1r1a3"}'
-                      >
-                        Sitemap
-                      </a>
-                    </li>
-                    <li id="c-uhff-footer_contactus">
-                      <a
-                        class="c-uhff-link"
-                        href="https://support.microsoft.com/contactus"
-                        data-mscc-ic="false"
-                        data-m='{"cN":"Footer_ContactUs_nav","id":"n2c8c1c1m1r1a3","sN":2,"aN":"c8c1c1m1r1a3"}'
-                      >
-                        Contact Microsoft
-                      </a>
-                    </li>
-                    <li id="c-uhff-footer_privacyandcookies">
-                      <a
-                        class="c-uhff-link"
-                        href="https://go.microsoft.com/fwlink/?LinkId=521839"
-                        data-mscc-ic="false"
-                        data-m='{"cN":"Footer_PrivacyandCookies_nav","id":"n3c8c1c1m1r1a3","sN":3,"aN":"c8c1c1m1r1a3"}'
-                      >
-                        Privacy{" "}
-                      </a>
-                    </li>
-                    <li class=" x-hidden" id="c-uhff-footer_managecookies">
-                      <a
-                        class="c-uhff-link"
-                        href="#"
-                        data-mscc-ic="false"
-                        data-m='{"cN":"Footer_ManageCookies_nav","id":"n4c8c1c1m1r1a3","sN":4,"aN":"c8c1c1m1r1a3"}'
-                      >
-                        Manage cookies
-                      </a>
-                    </li>
-                    <li id="c-uhff-footer_termsofuse">
-                      <a
-                        class="c-uhff-link"
-                        href="https://go.microsoft.com/fwlink/?LinkID=206977"
-                        data-mscc-ic="false"
-                        data-m='{"cN":"Footer_TermsOfUse_nav","id":"n5c8c1c1m1r1a3","sN":5,"aN":"c8c1c1m1r1a3"}'
-                      >
-                        Terms of use
-                      </a>
-                    </li>
-                    <li id="c-uhff-footer_trademarks">
-                      <a
-                        class="c-uhff-link"
-                        href="https://www.microsoft.com/trademarks"
-                        data-mscc-ic="false"
-                        data-m='{"cN":"Footer_Trademarks_nav","id":"n6c8c1c1m1r1a3","sN":6,"aN":"c8c1c1m1r1a3"}'
-                      >
-                        Trademarks
-                      </a>
-                    </li>
-                    <li id="c-uhff-footer_safetyandeco">
-                      <a
-                        class="c-uhff-link"
-                        href="https://www.microsoft.com/en-us/devices/safety-and-eco "
-                        data-mscc-ic="false"
-                        data-m='{"cN":"Footer_SafetyAndEco_nav","id":"n7c8c1c1m1r1a3","sN":7,"aN":"c8c1c1m1r1a3"}'
-                      >
-                        Safety &amp; eco
-                      </a>
-                    </li>
-                    <li id="c-uhff-footer_aboutourads">
-                      <a
-                        class="c-uhff-link"
-                        href="https://choice.microsoft.com"
-                        data-mscc-ic="false"
-                        data-m='{"cN":"Footer_AboutourAds_nav","id":"n8c8c1c1m1r1a3","sN":8,"aN":"c8c1c1m1r1a3"}'
-                      >
-                        About our ads
-                      </a>
-                    </li>
-
-                    <li>&#169; Microsoft 2021</li>
+                    {FooterLinksDataStructure.map((item) => (
+                      <li className={item.class} id={item.id}>
+                        <a className="c-uhff-link" href={item.router}>
+                          {item.text}
+                        </a>
+                      </li>
+                    ))}
+                    <li>© Microsoft 2021</li>
                   </ul>
                 </nav>
               </div>
